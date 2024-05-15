@@ -46,7 +46,6 @@ class TestMobileNetV2(unittest.TestCase):
         _skip_dim_order=True,  # TODO(T182928844): Delegate dim order op to backend.
     )
 
-    @unittest.skip("This test is not supported yet")
     def test_mv2_tosa_MI(self):
         (
             ArmTester(
